@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="home">
+    <h1>
+        <figure>
+            <img src="uh_red.png" class="center">
+        </figure>
+    </h1>
+
+    <ul> </ul>
+    
+<div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="review.html" class="active">Review</a>
+
+
+</div>
+<h1>Leave a review!</h1>
+<form>
+    <label>Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label>Email:</label><br>
+    <input type="text" id="email" name="email" required><br>
+    <label>Any details?:</label><br>
+    <textarea id="message" name="message" rows="10" cols="25" required></textarea><br>
+    <label for="cars">Choose a rating:</label>
+<select id="stars" name="stars">
+  <option value="excellent">Excellent!</option>
+  <option value="good">Good</option>
+  <option value="okay">Okay</option>
+  <option value="bad">Bad</option>
+</select>
+    <br><br>
+    <input id="submit" type="submit" value="Submit" onclick="showAlert()">
+
+  </form>
+  <script>
+    function showAlert() {
+      alert ("Thanks for your review!");
+    }
+    </script>
+
+    
+</body>
+<footer>
+    &#169; UH Sugarland, All rights reserved
+    </footer>
+</html>

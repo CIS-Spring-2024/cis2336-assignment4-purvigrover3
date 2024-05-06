@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="home">
+    <h1>
+        <figure>
+            <img src="uh_red.png" class="center">
+        </figure>
+    </h1>
+
+    <ul> </ul>
+    
+<div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="review.html">Review</a>
+
+
+</div>
+
+<h1>Any questions?</h1>
+
+<form>
+  <label>Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  <label>Email:</label><br>
+  <input type="text" id="email" name="email" required><br>
+  <label>Enter your question / inquiry:</label><br>
+  <textarea id="message" name="message" rows="10" cols="25" required></textarea>
+  <br><br>
+  <input id="submit" type="submit" value="Submit"  onclick="showAlert()">
+</form>
+    
+<script>
+    function showAlert() {
+      alert ("Recieved, we will get back to you within 24 to 48 business hours!");
+    }
+    </script>
+<div>
+<h3>Come visit us!</h3>
+<p>Address:</p>
+    <figure>
+        <img src="uhsl.jpeg" class="uhsl">
+    </figure>
+<p>University of Houston, Sugarland</p><br>
+<p>14000 University Blvd</p><br>
+<p>Sugar Land, TX 77479</p><br>
+<p>832-842-2900</p>
+
+</div>
+
+</body>
+<footer>
+    &#169; UH Sugarland, All rights reserved
+    </footer>
+</html>

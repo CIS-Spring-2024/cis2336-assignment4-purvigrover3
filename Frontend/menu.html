@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="home">
+    <h1>
+        <figure>
+            <img src="uh_red.png" class="center">
+        </figure>
+    </h1>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="about.html" >About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="review.html">Review</a>
+    </div>
+
+    <div class="title">
+        <img src="scope.jpeg" class="title">
+        <div class="centerd">Our Menu</div>
+    </div>
+    <h2 class="centertext">
+        Drinks:
+    </h2>
+<p></p>
+    <h3>
+        <form action="/submit" method ="POST" >
+        <div class="row">
+            <div class="column">
+            <img src="icedLatte.webp">
+            <p id="coffee">Iced Latte</p>
+            <input type="number" id="icedQuantity" min="1" max="10" step="any" value="1"> 
+            <button type="button"
+            onclick="addCart('Iced Latte: 16oz', 5.99, parseFloat(document.getElementById('icedQuantity').value))">Add to Cart</button>
+            <p id="coffee"></p>
+                </div>
+            <div class="column">
+                <img src="hotLatte.webp">
+                <p id="hcoffee">Hot Latte</p>
+                <input type="number" id="hotQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Hot Latte: 16oz', 4.99, parseFloat(document.getElementById('hotQuantity').value))">Add to Cart</button>
+                <p id="hcoffee"></p>
+                </div>
+            <div class="column">
+                <img src="matcha.jpeg">
+                <p id="matcha">Matcha Latte</p>
+                <input type="number" id="matchaQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Matcha Latte: 16oz', 5.99, parseFloat(document.getElementById('matchaQuantity').value))">Add to Cart</button>
+                <p id="matcha"></p>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+            <img src="tea.webp">
+            <p id="tea">Teas - Variety</p> 
+            <input type="number" id="teaQuantity" min="1" max="10" step="any" value="1">
+            <button type="button"
+            onclick="addCart('Tea: 16oz', 3.99, parseFloat(document.getElementById('teaQuantity').value))">Add to Cart</button>
+            <p id="tea"></p>
+                </div>
+        
+        </div>
+        <h2 class="centertext">
+        Pastries and Sides:
+        </h2>
+        <p></p>
+        <div class="row">
+            <div class="column">
+            <img src="breakfastsandwiches.jpeg">
+            <p id="breakf">Breakfast Sandwich</p>
+            <input type="number" id="sandwichQuantity" min="1" max="10" step="any" value="1">
+            <button type="button"
+            onclick="addCart('Breakfast Sandwich', 4.79, parseFloat(document.getElementById('sandwichQuantity').value))">Add to Cart</button>
+            <p id="breakf"></p>
+                </div>
+            <div class="column">
+                <img src="croissant.webp">
+                <p id="">Croissants</p>
+                <input type="number" id="croissantQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Croissant', 2.99, parseFloat(document.getElementById('croissantQuantity').value))">Add to Cart</button>
+                <p id="croissant"></p>
+                </div>
+            <div class="column">
+                <img src="minicake.webp">
+                <p id="cake">Mini Bundt Cake</p>
+                <input type="number" id="cakeQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Mini Bundt Cake', 3.99, parseFloat(document.getElementById('cakeQuantity').value))">Add to Cart</button>
+                </div>
+        </div>
+        <div class="row">
+            <div class="column">
+            <img src="fries.jpeg">
+            <p id="fries">Basket of Fries</p>
+            <input type="number" id="friesQuantity" min="1" max="10" step="any" value="1">
+            <button type="button"
+            onclick="addCart('Basket of Fries', 5.99, parseFloat(document.getElementById('friesQuantity').value))">Add to Cart</button>
+            <p id="fries"></p>
+                </div>
+        
+        </div>
+        <h2 class="centertext">
+            Lunch:
+        </h2>
+        <p></p>
+        <div class="row">
+            <div class="column">
+            <img src="pasta.jpeg">
+            <p id="pasta">Pastas</p>
+            <input type="number" id="pastaQuantity" min="1" max="10" step="any" value="1">
+            <button type="button"
+            onclick="addCart('Pasta: Chef weekly', 12.79, parseFloat(document.getElementById('pastaQuantity').value))">Add to Cart</button>
+            <p id="pasta"></p>
+                </div>
+            <div class="column">
+                <img src="pizza.jpeg">
+                <p id="pizza">Personal Pizza</p>
+                <input type="number" id="pizzaQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Personal Pizza', 7.99, parseFloat(document.getElementById('pizzaQuantity').value))">Add to Cart</button>
+                <p id="pizza"></p>
+                </div>
+            <div class="column">
+                <img src="tacos.jpeg">
+                <p id="tacos">Tacos</p>
+                <input type="number" id="tacosQuantity" min="1" max="10" step="any" value="1">
+                <button type="button"
+                onclick="addCart('Tacos: mini', 3.99, parseFloat(document.getElementById('tacosQuantity').value))">Add to Cart</button>
+                </div>
+        </div>
+
+        <div class="cart">
+            <h3>Shopping Cart</h3>
+            <div id="cartItems"></div>
+            <button type="button" action="/submit" method="POST" onclick="checkout()">Checkout</button>
+        </div>
+    </form>
+    </h3>
+</body>
+<footer>
+    &#169; UH Sugarland, All rights reserved
+</footer>
+</html>
